@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <flepsik.github.com.progress_ring.ProgressRingView
+        android:id="@+id/progressRing"
+        app:ring_width="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:background_progress_color="#123456"
+        app:progress_color="#07be7a"
+        app:animated="true"
+        app:animation_duration="950"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20sp"
+        android:onClick="comienzo"
+        android:text="Pulsa para empezar"/>
+
+    <TextView
+        android:id="@+id/countdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="75sp"
+        android:textColor="#000000"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:text="VOLVER"
+        android:textSize="20sp"
+        android:onClick="volverMain"
+        android:layout_gravity="bottom"/>
+
+
+</FrameLayout>

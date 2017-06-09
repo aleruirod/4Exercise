@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="aleruirod.myapplication">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/weightlifting"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".LoadingScreen" android:theme="@style/NoActionBar" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" android:screenOrientation="portrait">
+
+        </activity>
+        <activity android:name=".Entrenamiento1" android:screenOrientation="portrait">
+
+        </activity>
+        <activity android:name=".Entrenamiento2" android:screenOrientation="portrait">
+
+        </activity>
+        <activity android:name=".Entrenamiento3" android:screenOrientation="portrait">
+
+        </activity>
+        <activity android:name=".Entrenamiento4" android:screenOrientation="portrait">
+
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="aleruirod.myapplication.MainActivity">
+     
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/exercise_selection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:paddingLeft="70dp"
+                android:paddingRight="40dp"
+                android:text="Elige un ejercicio"
+                android:textSize="30sp"/>
+
+            <ViewFlipper
+                android:id="@+id/bckgrndViewFlipper"
+                android:layout_below="@+id/exercise_selection"
+                android:paddingTop="25dp"
+                android:paddingBottom="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:contentDescription="@string/situps"
+                    android:src="@drawable/situp" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:contentDescription="@string/pushups"
+                    android:src="@drawable/pushups" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:contentDescription="@string/planking"
+                    android:src="@drawable/plank" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:contentDescription="@string/squats"
+                    android:src="@drawable/squats" />
+
+            </ViewFlipper>
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bckgrndViewFlipper"
+                android:onClick="aEntrenamiento1"
+                android:text="@string/entrenamiento_1" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/button3"
+                android:onClick="aEntrenamiento2"
+                android:text="@string/entrenamiento_2" />
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/button4"
+                android:onClick="aEntrenamiento3"
+                android:text="@string/entrenamiento_3" />
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/button5"
+                android:onClick="aEntrenamiento4"
+                android:text="@string/entrenamiento_4" />
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

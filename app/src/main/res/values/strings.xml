@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">4 Exercise</string>
+    <string name="situps">situps</string>
+    <string name="change_text">change text</string>
+    <string name="click_me">click me!</string>
+    <string name="pushups">pushups</string>
+    <string name="volver">volver</string>
+    <string name="entrenamiento_1">Abdominales</string>
+    <string name="entrenamiento_2">Planking</string>
+    <string name="entrenamiento_3">Flexiones</string>
+    <string name="entrenamiento_4">Sentadillas</string>
+    <string name="planking">planking</string>
+    <string name="squats">squats</string>
+</resources>
